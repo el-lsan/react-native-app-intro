@@ -179,6 +179,7 @@ And in Android, image inside view component, view need width、height.
 | showSkipButton | bool | true | a boolean defining if we should render the skip button |
 | showDoneButton | bool | true | a boolean that defines if we should render the done button |
 | showDots | bool | true | a boolean that defines if we should render the bottom dots |
+| dotsPosition | number | 0 | position of dots (padding from bottom)|
 
 ##### **Children View Properties**
 | Prop  | PropType | Default Value | Description           |
