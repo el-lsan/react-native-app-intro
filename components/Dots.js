@@ -5,13 +5,14 @@ import {
 } from 'react-native';
 
 export const Dot = ({
-  styles, dotColor, activeDotColor, active
+  styles, dotColor, activeDotColor, active, dotsPosition
 }) => {
   if (active) {
     return (
       <View
         style={[styles.dotStyle, styles.activeDotStyle, { 
-          backgroundColor: activeDotColor 
+          backgroundColor: activeDotColor ,
+          bottom: dotsPosition
         }]}
       />
     );
@@ -19,7 +20,8 @@ export const Dot = ({
     return (
       <View 
         style={[styles.dotStyle, { 
-          backgroundColor: dotColor
+          backgroundColor: dotColor,
+          bottom: dotsPosition
         }]} />
     );
   }

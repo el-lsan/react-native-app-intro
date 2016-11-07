@@ -57,8 +57,8 @@ const defaulStyles = {
   },
   dotStyle: {
     backgroundColor: 'rgba(255,255,255,.3)',
-    width: 13,
-    height: 13,
+    width: 8,
+    height: 8,
     borderRadius: 7,
     marginLeft: 7,
     marginRight: 7,
@@ -67,10 +67,11 @@ const defaulStyles = {
   },
   activeDotStyle: {
     backgroundColor: '#fff',
+    width: 15,
   },
   paginationContainer: {
     position: 'absolute',
-    bottom: 25,
+    bottom: 0,
     left: 0,
     right: 0,
     flexDirection: 'row',
@@ -282,6 +283,7 @@ export default class AppIntro extends Component {
         </View>
       );
     }
+    //LOG(animatedChild);
     return animatedChild;
   }
 
@@ -388,6 +390,7 @@ AppIntro.propTypes = {
   showSkipButton: PropTypes.bool,
   showDoneButton: PropTypes.bool,
   showDots: PropTypes.bool,
+  dotsPosition: PropTypes.number,
 };
 
 AppIntro.defaultProps = {
@@ -406,5 +409,6 @@ AppIntro.defaultProps = {
   defaultIndex: 0,
   showSkipButton: true,
   showDoneButton: true,
-  showDots: true
+  showDots: true,
+  dotsPosition: 0
 };
